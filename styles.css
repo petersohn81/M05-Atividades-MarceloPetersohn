@@ -1,0 +1,71 @@
+
+/*Atividade 2 da Aula 6*/
+/*Seletores de Id e Classe*/
+
+#paragrafo {
+  font-size: 30px;
+}
+
+#bloco {
+  background-color: greenyellow;
+}
+
+
+.lista {
+  color: aquamarine;
+  font-size: 30px;
+  
+}
+
+ul li a {
+  color:blue;
+  background-color:antiquewhite;
+  font-size: 30px;
+}
+
+/*Atividade 3 da Aula 6*/
+/*Seletores de Combinadores*/
+
+div p {
+  color: yellow;
+  
+}
+
+div > p {
+  background-color: aqua;
+}
+
+h1 + span {
+  font-size: 25px;
+  color: green;
+}
+
+div ~ p {
+  color: red;
+  font-size: 18px;
+}
+
+
+/*Atividade 4 da Aula 6*/
+
+p::first-letter {
+  color:blue;
+  font-size: 25px;
+
+}
+
+::marker {
+  color: red;
+  font-size: 14px
+}
+
+.box::before {
+  content: "Início: ";
+  color: blue;
+  font-weight: inherit;
+}
+
+a:hover {
+  color: greenyellow;
+  text-decoration: overline;
+}
