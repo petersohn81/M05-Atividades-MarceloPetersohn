@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: Futura;
+  background-color: azure;
+}
+
+
+.cabecalho {
+  
+  color: black;
+  background-color: orange;
+  font-family: Futura;
+  font-size: 36px;
+  padding: 4px 0;
+  text-align: center;
+  text-shadow: 3px 3px 3px green, -3px 3px 3px green, 3px -3px gree, -3px -3px 3px green;
+  
+}
+
+
+.menu ul {
+  
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: 2px solid black;
+  width: 100px;
+ 
+}
+
+
+
+.menu li {
+  
+  height: 40px;
+  width: 100px;
+  background-color: lightgray;
+  text-align: center;
+  
+}
+
+
+.menu li:nth-child(1) {background-color: skyblue;}
+.menu li:nth-child(2) {background-color: green;}
+.menu li:nth-child(3) {background-color: darkgray;}
+  
+
+.texto {
+  
+  text-align: center;
+ 
+}
+
+.tabela {
+  
+  text-align: center;   
+  padding: 10px;
+  width: 280px;
+  position: relative;
+  top: 50px;
+  left: 800px;
+  
+}
+
+.tabela th:hover {
+  
+  background-color: greenyellow;
+}
+
+#tabh2 {
+  
+  color: blue;
+  
+}
+ 
+.tabela th, td {
+  
+  color: floralwhite;
+  background-color: black;
+  border: 1px solid black;
+  padding: 5px;  
+  
+}
+
+.pacote {
+  
+  position: relative;
+  top: 80px;
+  margin: 10px;
+  width: 500px;
+  border: 1px solid gray;
+  
+}
+
+
+#botao button {
+  
+  position: relative;
+  top: 100px;
+  margin: 50px;
+  box-shadow: 3px 3px 3px gray, -3px -3px gray, 3px -3px 3px gray, -3px -3px 3px gray; 
+  
+}
+
+#botao button:hover{
+  
+  background-color: chartreuse;
+}
+
+.rodape {
+  
+  background-color: orange;
+  text-decoration-color: black;
+  text-align: center;
+  position: relative;
+  top: 400px;
+  padding: 20px;
+  
+}
+  
+ 
+  
+
