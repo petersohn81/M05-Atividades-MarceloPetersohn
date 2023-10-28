@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEFICO</title>
+
+    <style>
+    
+      * {box-sizing:border-box;}
+      
+      .titulo {
+      
+      text-align: center;
+      color: black; 
+      background-color: green;
+      
+      }
+      
+      .menu {
+        
+        border: 6px solid black;
+        
+      }
+      
+      .menu li:hover {
+        
+        background-color: green;
+        
+      }
+      
+      .texto {
+        
+        color: green;
+        
+      }
+      
+      .sobre h2 {
+        
+        text-align: center;
+        
+      }
+      
+      .requisitos h2 {
+        
+        text-align: center;
+      }
+      
+      .logo {
+        
+        text-align: center;
+        
+      }
+      
+      .certificado h2 {
+        
+        color: green;
+        font-family: futura;
+        background-color: black;
+        text-align: center;
+        
+      }
+      
+      .logo img {
+        
+        display:
+      }
+      
+      .meio::after{
+        content: '';
+        clear: both;
+        display: table;
+      }
+      
+      [class*='col-'] {
+        
+        float:left;
+        padding: 10px;
+        width: 100%;
+        
+      }
+      
+      
+      @media only screen and (min-width: 1024px) {
+        .logo img{
+          
+          display:inline;
+          max-width: 100%;
+          height: auto;
+        }
+        
+        
+        .col-1 { width: 8.33%;}
+        .col-2 { width: 16.66%;}
+        .col-3 { width: 25%;}
+        .col-4 { width: 33.33%;}
+        .col-5 { width: 41.66%;}
+        .col-6 { width: 50%;}
+        .col-7 { width: 58.33%;}
+        .col-8 { width: 66.66%;}
+        .col-9 { width: 75%;}
+        .col-10 { width: 83.33%;}
+        .col-11 { width: 91.66%;}
+        .col-12 { width: 100%;}
+        
+      }
+     
+      @media only screen and (min-width: 767px) {
+        .logo img{
+          
+          display:inline;
+          max-width: 100%;
+          height: auto;
+        }
+        
+        
+        .col-s-1 { width: 8.33%;}
+        .col-s-2 { width: 16.66%;}
+        .col-s-3 { width: 25%;}
+        .col-s-4 { width: 33.33%;}
+        .col-s-5 { width: 41.66%;}
+        .col-s-6 { width: 50%;}
+        .col-s-7 { width: 58.33%;}
+        .col-s-8 { width: 66.66%;}
+        .col-s-9 { width: 75%;}
+        .col-s-10 { width: 83.33%;}
+        .col-s-11 { width: 91.66%;}
+        .col-s-12 { width: 100%;}
+        
+      }
+      
+      
+       @media only screen and (min-width: 767px) {
+        .logo img{
+          
+          display:inline;
+          max-width: 100%;
+          height: auto;
+        }
+        
+        
+        .col-s-1 { width: 8.33%;}
+        .col-s-2 { width: 16.66%;}
+        .col-s-3 { width: 25%;}
+        .col-s-4 { width: 33.33%;}
+        .col-s-5 { width: 41.66%;}
+        .col-s-6 { width: 50%;}
+        .col-s-7 { width: 58.33%;}
+        .col-s-8 { width: 66.66%;}
+        .col-s-9 { width: 75%;}
+        .col-s-10 { width: 83.33%;}
+        .col-s-11 { width: 91.66%;}
+        .col-s-12 { width: 100%;}
+        
+      }
+      
+      
+    </style>
+
+  </head>
+  <body>
+
+    <header class="titulo col-2">
+        <h1>CODEFICO</h1>
+    </header>
+
+    <div class="meio col-4 col-s-12">
+      <nav class="menu">
+          <ul>
+              <li><a href="#sobre">Sobre nós</a></li>
+              <li><a href="#requisitos">Requisitos</a></li>
+              <li><a href="#logo">Logo Codifico</a></li>
+              <li><a href="#certificado">Certificado</a></li>
+          </ul>
+      </nav>
+
+      <section class="texto">
+          <div class="sobre col-4 col-s-6" id="sobre">
+              <h2>O que é a codefico?</h2>
+              <p>A codefico é uma comunidade de professores universitários e estudantes da Universidade
+              Federal de São João del-Rei, que juntos oferecem um curso prático e profissionalizante, online e 100% gratuito.
+              Você aprenderá linguagens de programação e outros recursos para se tornar um programador de software web iniciante,
+              preparado para fazer parte do crescente mercado de software e tecnologia da informação.</p>
+          </div>
+
+          <div class="requisitos col-4 col-s-6" id="requisitos">
+              <h2>Quem pode participar?</h2>
+              <p>O único requisito para se candidatar ao curso é com relação à escolaridade, onde exige-se que o candidato tenha
+                primeiro grau completo. Uma vez aprovado, o requisito único para participar do curso é ter acesso a um computador
+                com internet, que será importante para realização das práticas de programação. Ou seja, qualquer pessoa com primeiro
+                grau completo e com acesso a um computador pode participar, de qualquer lugar do mundo!
+              </p>
+          </div>
+      </section>
+    </div>
+
+    <section class="logo col-4" id="logo">
+        <img src="C:\Users\Marcelo\Documents\CODEFICO\MÓDULO 5\AULA10\logo.png" height="200" width="600" alt="Logo da codifico">
+    </section>
+
+    <footer class="certificado col-6" id="certificado">
+      <h2>Certificado:</h2>
+      <p> A codefico emitirá certificado de conclusão para os alunos que finalizarem com sucesso o Módulo 1
+        e emitirá diploma para os alunos que finalizarem com sucesso o curso completo de Desenvolvimento Web,
+        ao término do curso em janeiro de 2024.</p>
+    </footer>
+
+  </body>
+</html>
