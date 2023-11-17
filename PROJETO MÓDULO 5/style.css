@@ -1,0 +1,200 @@
+* {
+  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  
+  background-color: lightgray;
+  
+}
+
+#gametitle {
+  
+  text-align: center;
+  font-size: 60px;
+  background-color: cadetblue;
+}
+
+.text {
+  
+  font-size: 50px;
+  text-align: center;
+  
+  
+}
+
+.text h3{
+  
+  font-size: 30px;
+  text-align: left;
+  color: black;
+  border: 4px solid black;
+  position: relative;
+  width: 225px;
+  left: 850px;
+ 
+}
+
+
+.pos1 {
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.pos2 {
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.neg1 {
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.neg2 {
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+
+.board {
+  
+  display: grid;
+  width: 100%;
+  height: 100%;
+  justify-content: center; /*Alinhar todos os conteúdos dentro das células do tabuleiro */
+  align-content: center;
+  justify-items: center;  /* Centralizar as imagens 'X' e 'O'*/
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+}
+
+
+
+/* Classe célula*/
+.cell {
+  
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cell.x, .cell.circle {
+  cursor: not-allowed; /*Clique não permitido nas células de classes x e circle (que já tiverem sido selecionadas*/
+  
+}
+
+
+
+/*Criando o 'X': */
+/* Se classe board possui a classe X, é a vez do X jogar*/
+/* Quero aplicar o hover em todas as células de conteúdo vazio, ou seja, sem o X ou circle*/
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.x .cell:not(.x):not(.circle):hover::before { 
+  content: "";
+  height: 15px;
+  width: 90px;
+  background: white;
+  position:absolute;
+  
+}
+
+.cell.x::before,
+.board.x .cell:not(.x):not(.circle):hover::before{
+  transform: rotate(45deg);
+}
+
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::after{
+  transform: rotate(-45deg);
+  
+}
+
+/*Criando o 'O' */
+.cell.circle::before,
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after{
+  content: "";
+  height: 90px;
+  width: 90px;
+  background: white;
+  position:absolute;
+  border-radius: 100px;
+  
+}
+
+
+
+/*Mensagem que o jogador venceu*/
+/*Position: fixed, top, left, right, buttom = 0: Para a mensagem ocupar todo a altura e largura da página*/
+/*Display: none. Só vai aparecer a mensagem quando o jogador vencer.*/
+.winning-message {
+  
+  display: none;
+  position: fixed; 
+  top: 300px;
+  left: 400px;
+  right: 400px;
+  bottom: 300px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  flex-direction: column;
+
+}
+
+/*Botão Reiniciar*/
+.winning-message-button {
+  font-size: 40px;
+  background-color: green;
+  padding: 10px 15px;
+  cursor: pointer; 
+  border-radius: 5px;
+  border: none;
+  margin-top: 16px;
+  color: white;
+  
+}
+
+.winning-message-button:hover {
+  color: green;
+  background-color: white;
+  
+}
+
+.show-winning-message {
+  display: flex;
+  color: white;
+  font-size: 80px;
+  
+}
+
+.winning-message-text {
+  color: white;
+  font-size: 80px;
+  
+}
+

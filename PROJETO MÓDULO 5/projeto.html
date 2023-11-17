@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Jogo da Velha</title>  
+  </head>
+  <body>
+      <div>
+        <h1 id="gametitle">JOGO DA VELHA</h1>
+      </div> 
+
+      <br>
+      <br>
+      <br>
+      <br>
+    
+      <div id="score" class="text"><b>PLACAR</b>
+        <br>
+        <br>
+        <h3 id="playerX" class="x">Jogador X  <button id="positive1" class="pos1">+</button><span id="count1"> 0 </span><button id="negative1" class="neg1">-</button></h3>
+        <h3 id="playerO" class="o">Jogador O  <button id="positive2" class="pos2">+</button><span id="count2"> 0 </span><button id="negative2" class="neg2">-</button></h3>
+      </div>
+   
+      
+      <br>
+      <br>
+      <br>
+      <br>
+    
+      <div class="board x" data-board>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+    
+      <div class="winning-message" data-winning-message>
+        <p class="winning-message-text" data-winning-message-text></p>
+        <button class="winning-message-button" data-restart-button>Reiniciar</button>
+      </div>
+  
+   
+      <script src="projetojs.js"></script>
+  
+    </body>
+
+</html>
+
